@@ -1,0 +1,9 @@
+# In single page app, the command document.getElementById('notes_form') instructs 
+the code to fetch the form-element from the page, and to register an event handler to 
+handle the form submit event. The event handler immediately calls the method e.preventDefault() 
+to prevent the default handling of form submit. Then the event handler creates a new note, adds it 
+to the notes list with the command notes.push(note), 
+rerenders the note list on the page and sends the new note to the server with method POST.
+browser-->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+##Data sent: {content: "popo", date: "2022-06-22T14:30:53.974Z"}
+##Content type: application/json; charset=utf-8
