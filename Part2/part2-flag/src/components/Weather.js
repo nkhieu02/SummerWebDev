@@ -7,7 +7,7 @@ const Weather = ({ latlng, capital }) => {
     const [temp, setTemp] = useState(0);
     const [wind, setWind] = useState(0);
     const [icon, setIcon] = useState('');
-    const API = "";
+    const API = "a120841851f294a1725668b453b0fa44";
     useEffect(() => {
         console.log("Effect");
 
